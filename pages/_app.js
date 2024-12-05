@@ -7,7 +7,7 @@ export default function App({ Component, pageProps }) {
   <>
     <GlobalStyle />
     <Header />
-    <Component {...pageProps} />;
+    <Component {...pageProps} />
   </>
   )
 }

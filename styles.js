@@ -1,5 +1,7 @@
 import { createGlobalStyle } from "styled-components";
+import { Lexend } from "next/font/google";
 
+const lexendPeta = Lexend({ subsets: ['latin'] });
 
 export default createGlobalStyle`
 
@@ -14,7 +16,19 @@ export default createGlobalStyle`
 body {
   margin: 0;
   width: 100%;
-  background-color: lightcoral;
+  font-family: ${lexendPeta.style.fontFamily};
 }
+
+h1 {
+    font-size: 75px;
+    text-transform: uppercase;
+    text-align: right;
+}
+
+h2 {
+    font-size: 65px;
+    text-transform: uppercase;
+}
+
 
 `;

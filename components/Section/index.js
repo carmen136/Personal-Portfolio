@@ -9,6 +9,7 @@ export default function Section({content, id}) {
 
 const StyledSection = styled.section`
     width: 100%;
-    height: 100vh;
-    background-color: lightskyblue;
+    height: 50vh;
+    background-color: white;
+    border-bottom: 2px solid gray;
 `;
