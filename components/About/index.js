@@ -72,7 +72,7 @@ const StyledTextWrapper = styled.div`
     transition: width 0.45s ease-in-out;
 
     &:hover {
-        width: 50%;
+        width: 35%;
     }
 `;
 
