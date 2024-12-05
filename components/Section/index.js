@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
-export default function Section({content}) {
+export default function Section({content, id}) {
     return (
-        <StyledSection>{content}</StyledSection>
+        <StyledSection id={id}>{content}</StyledSection>
     )
 }
 
