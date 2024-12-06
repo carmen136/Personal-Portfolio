@@ -44,12 +44,25 @@ const StyledTextWrapper = styled.div`
     position: relative;
     padding-right: 12px;
     border-bottom: 2px solid rgba(195, 155, 211, 0.8);
+    text-align: right;
+
+    @media(max-width: 768px){
+        padding-right: 10px;
+        padding-left: 10px;
+        align-items: flex-start;
+        text-align: left;
+    }
 `;
 
 const StyledComment = styled.p`
     font-size: 18px;
     text-transform: uppercase;
     color: rgb(128, 128, 128);
+
+
+    @media(max-width: 768px){
+        font-size: 14px;
+    }
 `;
 
 const StyledImageWrapper = styled.div`

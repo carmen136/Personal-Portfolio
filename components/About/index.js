@@ -10,7 +10,7 @@ export default function About() {
                 
                 <StyledTextRightWrapper>
                     <StyledComment>{'// Persona'}</StyledComment>
-                    <StyledInfoText>Web developer with a Bachelors degree in Environmental Engineering. Through my training in the Web Development Bootcamp at neue fische and my experiences in a tech startup, I have acquired not only technical skills but also competencies in agile project management and teamwork. I am passionate about developing digital solutions that are both user-friendly and sustainable.</StyledInfoText>
+                    <StyledInfoText>Web developer with a Bachelor degree in Environmental Engineering. Through absolving the Web Dev Bootcamp at neue fische and my experiences in a tech startup, I have acquired not only technical skills but also competencies in agile project management and teamwork. Passionate about developing digital solutions that are both user-friendly and sustainable.</StyledInfoText>
                     <StyledComment>{'// Tech Stack'}</StyledComment>
                     <StyledList>
                         <StyledListItem>HTML</StyledListItem>
@@ -45,9 +45,7 @@ const StyledTextWrapper = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
-    background-color: white;
     background-color: rgba(195, 155, 211, 0.5);
-    flex-grow: 1;
     z-index: 2;
     position: relative;
     padding-left: 20px;
@@ -58,6 +56,15 @@ const StyledTextWrapper = styled.div`
     &:hover {
         width: 35%;
     }
+
+    @media(max-width: 768px){
+        width: 20%;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 0 10px;
+        writing-mode: vertical-lr;
+        transform: rotate(180deg);
+    }
 `;
 
 const StyledComment = styled.p`
@@ -65,6 +72,11 @@ const StyledComment = styled.p`
     text-transform: uppercase;
     color: rgb(128, 128, 128);
     padding-bottom: 8px;
+
+    @media(max-width: 768px){
+        font-size: 14px;
+        padding-bottom: 5px;
+    }
 `;
 
 const StyledTextRightWrapper = styled.div`
@@ -79,12 +91,22 @@ const StyledTextRightWrapper = styled.div`
     text-align: left;
     padding-left: 12px;
     padding-right: 20px;
+
+    @media(max-width: 768px){
+        width: 65%;
+        padding: 30px 10px 0;
+    }
 `;
 
 const StyledInfoText = styled.p`
     text-align: left;
     padding-bottom: 25px;
     line-height: 1.5;
+
+    @media(max-width: 768px){
+        font-size: 12px;
+        padding-bottom: 10px;
+    }
 `;
 
 const StyledList = styled.ul`
@@ -94,6 +116,10 @@ const StyledList = styled.ul`
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: center;
+
+    @media(max-width: 768px){
+        gap: 5px;
+    }
 `;
 
 const StyledListItem = styled.li`
@@ -105,4 +131,8 @@ const StyledListItem = styled.li`
 &:hover {
     background-color: rgba(195, 155, 211, 0.8);
 }
+
+@media(max-width: 768px){
+        font-size: 10px;
+    }
 `;

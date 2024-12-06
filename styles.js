@@ -22,12 +22,19 @@ body {
 h1 {
     font-size: 75px;
     text-transform: uppercase;
-    text-align: right;
+
+    @media (max-width: 768px) {
+        font-size: 34px;
+    }
 }
 
 h2 {
     font-size: 65px;
     text-transform: uppercase;
+
+    @media (max-width: 768px) {
+        font-size: 28px;
+    }
 }
 
 

@@ -27,6 +27,12 @@ const StyledHeader = styled.header`
     align-items: center;
     gap: 40px;
     padding: 0 65px;
+
+    @media(max-width: 768px){
+        gap: 10px;
+        padding: 0 10px;
+        font-size: 14px;
+    }
 `;
 
 

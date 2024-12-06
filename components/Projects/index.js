@@ -47,6 +47,11 @@ const StyledTextWrapper = styled.div`
     &:hover {
         width: 98%;
     }
+
+    @media(max-width: 768px){
+        font-size: 14px;
+        padding: 0 10px 0 20px;
+    }
 `;
 
 const StyledComment = styled.p`
@@ -55,6 +60,10 @@ const StyledComment = styled.p`
     color: rgb(128, 128, 128);
     padding-bottom: 8px;
     text-align: right;
+
+    @media(max-width: 768px){
+        font-size: 14px;
+    }
 `;
 
 const StyledTextBottomWrapper = styled.div`
@@ -76,7 +85,7 @@ const StyledList = styled.ul`
     list-style: none;
     gap: 15px;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
 `;
 
@@ -86,4 +95,9 @@ const StyledListItem = styled.li`
     padding: 2px 6px;
     width: 250px;
     height: 250px;
+
+    @media(max-width: 768px){
+        width: 150px;
+        height: 125px;
+    }
 `;

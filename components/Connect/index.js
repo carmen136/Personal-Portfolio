@@ -65,6 +65,10 @@ const StyledComment = styled.p`
     font-size: 18px;
     text-transform: uppercase;
     color: rgb(128, 128, 128);
+
+    @media(max-width: 768px){
+        font-size: 14px;
+    }
 `;
 
 const StyledTextRightWrapper = styled.div`
@@ -89,6 +93,10 @@ const StyledList = styled.ul`
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: center;
+
+    @media(max-width: 768px){
+        gap: 0px;
+    }
 `;
 
 const StyledListItem = styled.li`
@@ -96,6 +104,10 @@ const StyledListItem = styled.li`
     font-size: 3rem;
     color: black;
     padding: 2px 6px;
+
+    @media(max-width: 768px){
+        font-size: 2.5rem;
+    }
 `;
 
 
@@ -128,4 +140,9 @@ const StyledImpressumContainer = styled.ul`
     color: rgba(128, 128, 128, 0.7);
     font-size: 12px;
     text-transform: uppercase;
+
+    @media(max-width: 768px){
+        font-size: 8px;
+        padding: 0 10px;
+    }
 `;
