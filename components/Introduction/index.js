@@ -46,7 +46,7 @@ const StyledTextWrapper = styled.div`
     border-bottom: 2px solid rgba(195, 155, 211, 0.8);
     text-align: right;
 
-    @media(max-width: 768px){
+    @media(max-width: 576px){
         padding-right: 10px;
         padding-left: 10px;
         align-items: flex-start;
@@ -60,7 +60,7 @@ const StyledComment = styled.p`
     color: rgb(128, 128, 128);
 
 
-    @media(max-width: 768px){
+    @media(max-width: 576px){
         font-size: 14px;
     }
 `;

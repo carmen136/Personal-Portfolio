@@ -23,8 +23,12 @@ h1 {
     font-size: 75px;
     text-transform: uppercase;
 
-    @media (max-width: 768px) {
+    @media (max-width: 576px) {
         font-size: 34px;
+    }
+
+    @media (max-width: 992px) {
+        font-size: 40px;
     }
 }
 
@@ -32,8 +36,12 @@ h2 {
     font-size: 65px;
     text-transform: uppercase;
 
-    @media (max-width: 768px) {
+    @media (max-width: 576px) {
         font-size: 28px;
+    }
+
+    @media (max-width: 992px) {
+        font-size: 35px;
     }
 }
 

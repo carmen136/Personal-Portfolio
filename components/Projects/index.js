@@ -48,7 +48,7 @@ const StyledTextWrapper = styled.div`
         width: 98%;
     }
 
-    @media(max-width: 768px){
+    @media(max-width: 576px){
         font-size: 14px;
         padding: 0 10px 0 20px;
     }
@@ -61,7 +61,7 @@ const StyledComment = styled.p`
     padding-bottom: 8px;
     text-align: right;
 
-    @media(max-width: 768px){
+    @media(max-width: 576px){
         font-size: 14px;
     }
 `;
@@ -96,8 +96,13 @@ const StyledListItem = styled.li`
     width: 250px;
     height: 250px;
 
-    @media(max-width: 768px){
+    @media(max-width: 576px){
         width: 150px;
         height: 125px;
+    }
+
+    @media(max-width: 768px){
+        width: 200px;
+        height: 160px;
     }
 `;

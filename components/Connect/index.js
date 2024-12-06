@@ -66,7 +66,7 @@ const StyledComment = styled.p`
     text-transform: uppercase;
     color: rgb(128, 128, 128);
 
-    @media(max-width: 768px){
+    @media(max-width: 576px){
         font-size: 14px;
     }
 `;
@@ -89,12 +89,12 @@ const StyledTextRightWrapper = styled.div`
 const StyledList = styled.ul`
     display: flex;
     list-style: none;
-    gap: 10px;
+    gap: 6px;
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: center;
 
-    @media(max-width: 768px){
+    @media(max-width: 576px){
         gap: 0px;
     }
 `;
@@ -105,7 +105,7 @@ const StyledListItem = styled.li`
     color: black;
     padding: 2px 6px;
 
-    @media(max-width: 768px){
+    @media(max-width: 576px){
         font-size: 2.5rem;
     }
 `;

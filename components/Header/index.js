@@ -28,12 +28,19 @@ const StyledHeader = styled.header`
     gap: 40px;
     padding: 0 65px;
 
-    @media(max-width: 768px){
+    @media(max-width: 576px){
         gap: 10px;
         padding: 0 10px;
-        font-size: 14px;
+        font-size: 16px;
+    }
+
+    @media(max-width: 768px){
+        gap: 10px;
+        padding: 0 40px;
+        font-size: 16px;
     }
 `;
+
 
 
 const StyledLink = styled(Link)`

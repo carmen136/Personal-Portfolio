@@ -57,7 +57,7 @@ const StyledTextWrapper = styled.div`
         width: 35%;
     }
 
-    @media(max-width: 768px){
+    @media(max-width: 576px){
         width: 20%;
         justify-content: flex-start;
         align-items: center;
@@ -73,8 +73,12 @@ const StyledComment = styled.p`
     color: rgb(128, 128, 128);
     padding-bottom: 8px;
 
-    @media(max-width: 768px){
+    @media(max-width: 576px){
         font-size: 14px;
+        padding-bottom: 5px;
+    }
+
+    @media(max-width: 768px){
         padding-bottom: 5px;
     }
 `;
@@ -92,8 +96,12 @@ const StyledTextRightWrapper = styled.div`
     padding-left: 12px;
     padding-right: 20px;
 
-    @media(max-width: 768px){
+    @media(max-width: 576px){
         width: 65%;
+        padding: 30px 10px 0;
+    }
+
+    @media(max-width: 768px){
         padding: 30px 10px 0;
     }
 `;
@@ -103,7 +111,7 @@ const StyledInfoText = styled.p`
     padding-bottom: 25px;
     line-height: 1.5;
 
-    @media(max-width: 768px){
+    @media(max-width: 576px){
         font-size: 12px;
         padding-bottom: 10px;
     }
@@ -117,7 +125,7 @@ const StyledList = styled.ul`
     justify-content: flex-start;
     align-items: center;
 
-    @media(max-width: 768px){
+    @media(max-width: 576px){
         gap: 5px;
     }
 `;
@@ -132,7 +140,11 @@ const StyledListItem = styled.li`
     background-color: rgba(195, 155, 211, 0.8);
 }
 
-@media(max-width: 768px){
+@media(max-width: 576px){
         font-size: 10px;
+    }
+
+@media(max-width: 768px){
+        font-size: 12px;
     }
 `;
