@@ -40,9 +40,8 @@ const StyledTextWrapper = styled.div`
     width: 50vw;
     z-index: 2;
     position: relative;
-    /* padding-top: 40px; */
     padding-right: 12px;
-    border-bottom: 2px solid gray;
+    border-bottom: 2px solid rgba(195, 155, 211, 0.8);
 `;
 
 const StyledComment = styled.p`
@@ -57,7 +56,7 @@ const StyledImageWrapper = styled.div`
     overflow: hidden;
     position: relative;
     flex-grow: 1;
-    border-bottom: 2px solid gray;
+    border-bottom: 2px solid rgba(195, 155, 211, 0.5);
 `;
 
 const StyledImageLayer = styled.div`
@@ -68,4 +67,9 @@ const StyledImageLayer = styled.div`
     left: 0;
     z-index: 1;
     background-color: rgba(195, 155, 211, 0.5);
+    transition: background-color 0.45s ease-in-out;
+
+&:hover {
+    background-color: rgba(195, 155, 211, 0.15);
+}
 `;
