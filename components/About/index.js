@@ -98,4 +98,9 @@ const StyledListItem = styled.li`
     text-transform: uppercase;
     background-color: rgba(195, 155, 211, 0.5);
     padding: 2px 6px;
+    transition: background-color 0.45s ease;
+
+&:hover {
+    background-color: rgba(195, 155, 211, 0.8);
+}
 `;

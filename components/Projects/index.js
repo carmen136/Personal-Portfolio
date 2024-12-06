@@ -10,7 +10,6 @@ export default function Projects() {
                 </StyledTextWrapper>
                 
                 <StyledTextBottomWrapper>
-                    <StyledComment>{'// Tech Stack'}</StyledComment>
                     <StyledList>
                         <StyledListItem>Project 1</StyledListItem>
                         <StyledListItem>Project 2</StyledListItem>
@@ -45,9 +44,8 @@ const StyledTextWrapper = styled.div`
     transition: all 0.45s ease-in-out;
 
     &:hover {
-        padding-top: 20px;
-        /* width: 95%; */
-        color: rgba(195, 155, 211, 1);
+        /* padding-top: 20px; */
+        width: 95%;
     }
 `;
 
@@ -76,7 +74,7 @@ const StyledTextBottomWrapper = styled.div`
 const StyledList = styled.ul`
     display: flex;
     list-style: none;
-    gap: 10px;
+    gap: 15px;
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: center;
@@ -86,4 +84,6 @@ const StyledListItem = styled.li`
     text-transform: uppercase;
     background-color: rgba(195, 155, 211, 0.5);
     padding: 2px 6px;
+    width: 230px;
+    height: 200px;
 `;
