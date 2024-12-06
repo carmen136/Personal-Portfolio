@@ -51,7 +51,7 @@ const StyledTextWrapper = styled.div`
     flex-grow: 1;
     position: relative;
     padding: 0px 12px 0px 20px;
-    width: 55%;
+    width: 50%;
     transition: padding-top 0.45s ease-in-out;
 
     &:hover {
@@ -70,7 +70,7 @@ const StyledTextRightWrapper = styled.div`
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
-    width: 45%;
+    width: 50%;
     height: 30vh;
     position: relative;
     flex-grow: 1;
@@ -116,9 +116,10 @@ const StyledExternalLink = styled.a`
 
 const StyledImpressumContainer = styled.ul`
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: flex-end;
     list-style: none;
+    padding: 0 50px;
     gap: 20px;
     height: 4vh;
     width: 100%;
