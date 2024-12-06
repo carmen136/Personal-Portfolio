@@ -42,10 +42,12 @@ const StyledTextWrapper = styled.div`
     padding-right: 12px;
     width: 100%;
     height: 15vh;
-    transition: width 0.45s ease-in-out;
+    transition: all 0.45s ease-in-out;
 
     &:hover {
-        width: 35%;
+        padding-top: 20px;
+        /* width: 95%; */
+        color: rgba(195, 155, 211, 1);
     }
 `;
 
