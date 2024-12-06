@@ -16,7 +16,7 @@ export default function Header() {
 
 
 const StyledHeader = styled.header`
-    width: 100vw;
+    width: 100%;
     height: 40px;
     background-color: rgba(0, 0, 0, 0.1);
     position: fixed;

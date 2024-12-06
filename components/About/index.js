@@ -34,8 +34,10 @@ export default function About() {
 
 const StyledContentContainer = styled.article`
     display: flex;
+    overflow: hidden;
     position: relative;
     z-index: 0;
+    width: 100%;
 `;
 
 const StyledTextWrapper = styled.div`

@@ -25,8 +25,10 @@ export default function Projects() {
 const StyledContentContainer = styled.article`
     display: flex;
     flex-direction: column;
+    overflow: hidden;
     position: relative;
     z-index: 0;
+    width: 100%;
 `;
 
 const StyledTextWrapper = styled.div`
