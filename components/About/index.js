@@ -4,29 +4,11 @@ export default function About() {
     return (
         <>
             <StyledContentContainer>
-                {/* <StyledImageLayer /> */}
                 <StyledTextWrapper>
                     <h2>About</h2>
-                    {/* <StyledComment>{'// Persona'}</StyledComment>
-                    <StyledInfoText>Hi! I am a Web developer with a Bachelors degree in Environmental Engineering. Through my training in the Web Development Bootcamp at neue fische and my experiences in a tech startup, I have acquired not only technical skills but also competencies in agile project management and teamwork. I am passionate about developing digital solutions that are both user-friendly and sustainable.</StyledInfoText>
-                    <StyledComment>{'// Tech Stack'}</StyledComment>
-                    <StyledList>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JavaScript</li>
-                        <li>React</li>
-                        <li>Next.js</li>
-                        <li>Node.js</li>
-                        <li>noSQL</li>
-                        <li>mongoDB</li>
-                        <li>git</li>
-                        <li>GitHub</li>
-                        <li>Miro</li>
-                    </StyledList> */}
                 </StyledTextWrapper>
                 
                 <StyledTextRightWrapper>
-                    {/* <h2>About</h2> */}
                     <StyledComment>{'// Persona'}</StyledComment>
                     <StyledInfoText>Web developer with a Bachelors degree in Environmental Engineering. Through my training in the Web Development Bootcamp at neue fische and my experiences in a tech startup, I have acquired not only technical skills but also competencies in agile project management and teamwork. I am passionate about developing digital solutions that are both user-friendly and sustainable.</StyledInfoText>
                     <StyledComment>{'// Tech Stack'}</StyledComment>

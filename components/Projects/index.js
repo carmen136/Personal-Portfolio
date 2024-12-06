@@ -37,7 +37,6 @@ const StyledTextWrapper = styled.div`
     align-items: flex-end;
     background-color: white;
     flex-grow: 1;
-    z-index: 2;
     position: relative;
     padding-left: 20px;
     padding-right: 12px;
@@ -70,12 +69,6 @@ const StyledTextBottomWrapper = styled.div`
     flex-grow: 1;
     padding-left: 12px;
     padding-right: 20px;
-`;
-
-const StyledInfoText = styled.p`
-    text-align: center;
-    padding-bottom: 25px;
-    line-height: 1.5;
 `;
 
 const StyledList = styled.ul`
