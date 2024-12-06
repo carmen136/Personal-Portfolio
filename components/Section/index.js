@@ -11,11 +11,11 @@ export default function Section({content, id}) {
 
 
 const projectsTheme = {
-    height: "70vh"
+    height: "65vh"
 };
 
 const connectTheme = {
-    height: "30vh"
+    height: "35vh"
 }
 
 const defaultTheme = {

@@ -32,14 +32,14 @@ const StyledContentContainer = styled.article`
 const StyledTextWrapper = styled.div`
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: flex-end;
     background-color: white;
     flex-grow: 1;
     position: relative;
     padding: 0px 50px 0 20px;
     width: 100%;
-    height: 15vh;
+    height: 20vh;
     transition: width 0.45s ease-in-out;
 
     &:hover {
@@ -62,7 +62,7 @@ const StyledTextBottomWrapper = styled.div`
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 35vh;
+    height: 40vh;
     position: relative;
     flex-grow: 1;
     padding-left: 12px;
