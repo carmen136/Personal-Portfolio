@@ -82,6 +82,6 @@ const StyledListItem = styled.li`
     text-transform: uppercase;
     background-color: rgba(195, 155, 211, 0.5);
     padding: 2px 6px;
-    width: 230px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
 `;
