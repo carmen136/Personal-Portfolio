@@ -7,12 +7,11 @@ export default function Connect() {
         <>
             <StyledContentContainer>
                 <StyledTextWrapper>
-                {/* <StyledComment>{'// Let`s'}</StyledComment> */}
+                <StyledComment>{'// Let`s'}</StyledComment>
                     <h2>Connect</h2>
                 </StyledTextWrapper>
                 
                 <StyledTextRightWrapper>
-                    <StyledComment>{'// Network'}</StyledComment>
                     <StyledList>
                         <StyledListItem>
                             <StyledExternalLink href="https://github.com/carmen136">
@@ -25,11 +24,14 @@ export default function Connect() {
                             </StyledExternalLink>
                         </StyledListItem>
                     </StyledList>
-                    <p>This site is built with React and Next.js</p>
-                    <p> {'(c) 2024 Carmen Müller. All rights reserved.'}</p>
-                    <p>Impressum</p>
+                    <StyledComment>{'// Network'}</StyledComment>
                 </StyledTextRightWrapper>
             </StyledContentContainer>
+            <StyledImpressumContainer>
+                        <li>This site is built with React and Next.js</li>
+                        <li> {'© 2024 Carmen Müller. All rights reserved.'}</li>
+                        <li>Impressum</li>
+            </StyledImpressumContainer>
         </>
     )
 };
@@ -49,7 +51,7 @@ const StyledTextWrapper = styled.div`
     flex-grow: 1;
     position: relative;
     padding: 0px 12px 0px 20px;
-    width: 50%;
+    width: 55%;
     transition: padding-top 0.45s ease-in-out;
 
     &:hover {
@@ -61,7 +63,6 @@ const StyledComment = styled.p`
     font-size: 18px;
     text-transform: uppercase;
     color: rgb(128, 128, 128);
-    padding-bottom: 8px;
 `;
 
 const StyledTextRightWrapper = styled.div`
@@ -69,8 +70,8 @@ const StyledTextRightWrapper = styled.div`
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
-    width: 50%;
-    height: 35vh;
+    width: 45%;
+    height: 30vh;
     position: relative;
     flex-grow: 1;
     text-align: left;
@@ -91,7 +92,7 @@ const StyledList = styled.ul`
 const StyledListItem = styled.li`
     text-transform: uppercase;
     font-size: 3rem;
-    color: rgba(165, 105, 189, 1);
+    color: black;
     padding: 2px 6px;
 `;
 
@@ -99,15 +100,29 @@ const StyledListItem = styled.li`
 const StyledExternalLink = styled.a`
 
 &:visited {
-    color: rgba(165, 105, 189, 1);
+    color: black;
 }
 
 &:active {
-    color: black;
+    color: rgba(165, 105, 189, 1);
 }
 
 &:hover {
-    color: black;
+    color: rgba(165, 105, 189, 1);
 }
 
+`;
+
+
+const StyledImpressumContainer = styled.ul`
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    list-style: none;
+    gap: 20px;
+    height: 4vh;
+    width: 100%;
+    color: rgba(128, 128, 128, 0.7);
+    font-size: 12px;
+    text-transform: uppercase;
 `;
