@@ -32,20 +32,18 @@ const StyledContentContainer = styled.article`
 const StyledTextWrapper = styled.div`
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: flex-end;
     background-color: white;
     flex-grow: 1;
     position: relative;
-    padding-left: 20px;
-    padding-right: 12px;
+    padding: 0px 50px 0 20px;
     width: 100%;
     height: 15vh;
-    transition: all 0.45s ease-in-out;
+    transition: width 0.45s ease-in-out;
 
     &:hover {
-        /* padding-top: 20px; */
-        width: 95%;
+        width: 98%;
     }
 `;
 

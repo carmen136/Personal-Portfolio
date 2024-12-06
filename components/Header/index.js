@@ -8,7 +8,7 @@ export default function Header() {
             <StyledLink href="#introduction">Home</StyledLink>
             <StyledLink href="#about">About</StyledLink>
             <StyledLink href="#projects">Projects</StyledLink>
-            {/* <Link href="##contact">Contact</Link> */}
+            <StyledLink href="#connect">Connect</StyledLink>
         </StyledHeader>
     )
 
@@ -19,7 +19,6 @@ const StyledHeader = styled.header`
     width: 100vw;
     height: 40px;
     background-color: rgba(0, 0, 0, 0.1);
-    /* background-color: rgba(195, 155, 211, 0.3); */
     position: fixed;
     top: 0;
     z-index: 5;
@@ -27,7 +26,7 @@ const StyledHeader = styled.header`
     justify-content: flex-end;
     align-items: center;
     gap: 40px;
-    padding: 0 100px;
+    padding: 0 65px;
 `;
 
 
