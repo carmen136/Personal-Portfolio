@@ -15,14 +15,17 @@ export default function Connect() {
                     <StyledComment>{'// Network'}</StyledComment>
                     <StyledList>
                         <StyledListItem>
-                            <a href="https://github.com/carmen136">
-                            <IoLogoGithub />
-                            </a>
+                            <StyledExternalLink href="https://github.com/carmen136">
+                                <IoLogoGithub />
+                            </StyledExternalLink>
                             </StyledListItem>
-                        <StyledListItem><IoLogoLinkedin /></StyledListItem>
+                        <StyledListItem>
+                            <StyledExternalLink href="https://www.linkedin.com/in/carmen-a-m%C3%BCller/">
+                                <IoLogoLinkedin />
+                            </StyledExternalLink>
+                        </StyledListItem>
                     </StyledList>
                     <p>This site is built with React and Next.js</p>
-                    <StyledComment>{'// Tech Stack'}</StyledComment>
                     <p> {'(c) 2024 Carmen Müller. All rights reserved.'}</p>
                     <p>Impressum</p>
                 </StyledTextRightWrapper>
@@ -43,18 +46,15 @@ const StyledTextWrapper = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
-    background-color: white;
     flex-grow: 1;
-    z-index: 2;
     position: relative;
-    padding-left: 20px;
-    padding-right: 12px;
+    padding: 0px 12px 0px 20px;
     width: 50%;
-    /* transition: width 0.45s ease-in-out;
+    transition: padding-top 0.45s ease-in-out;
 
     &:hover {
-        width: 35%;
-    } */
+        padding-top: 25px;
+    }
 `;
 
 const StyledComment = styled.p`
@@ -70,7 +70,7 @@ const StyledTextRightWrapper = styled.div`
     flex-wrap: wrap;
     justify-content: center;
     width: 50%;
-    height: 30vh;
+    height: 35vh;
     position: relative;
     flex-grow: 1;
     text-align: left;
@@ -91,12 +91,23 @@ const StyledList = styled.ul`
 const StyledListItem = styled.li`
     text-transform: uppercase;
     font-size: 3rem;
-    color: rgba(195, 155, 211, 1);
-    /* background-color: rgba(195, 155, 211, 0.5); */
+    color: rgba(165, 105, 189, 1);
     padding: 2px 6px;
-    transition: background-color 0.45s ease;
+`;
+
+
+const StyledExternalLink = styled.a`
+
+&:visited {
+    color: rgba(165, 105, 189, 1);
+}
+
+&:active {
+    color: black;
+}
 
 &:hover {
-    background-color: rgba(195, 155, 211, 0.8);
+    color: black;
 }
+
 `;
