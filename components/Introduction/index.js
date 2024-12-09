@@ -8,9 +8,9 @@ export default function Introduction() {
             <StyledContentContainer>
                 <StyledImageLayer />
                 <StyledTextWrapper>
-                    <StyledComment>{'// Carmen Müller'}</StyledComment>
+                    <StyledComment>{'// I am'}</StyledComment>
                     <h1>Web Developer</h1>
-                    <StyledComment>This is a portfolio</StyledComment>
+                    <StyledSubtTitle>{'Carmen Müller'}</StyledSubtTitle>
                 </StyledTextWrapper>
                 
                 <StyledImageWrapper>
@@ -65,8 +65,21 @@ const StyledComment = styled.p`
     }
 `;
 
+const StyledSubtTitle = styled.h2`
+    font-size: 18px;
+
+    @media(min-width: 992px){
+        font-size: 24px;
+    }
+
+    @media(min-width: 1710px){
+        font-size: 30px;
+    }
+    `;
+
 const StyledImageWrapper = styled.div`
     width: 50vw;
+    max-width: 586px;
     height: 50vh;
     overflow: hidden;
     position: relative;

@@ -30,6 +30,10 @@ h1 {
     @media (max-width: 992px) {
         font-size: 40px;
     }
+
+    @media (min-width: 1710px) {
+        font-size: 100px;
+    }
 }
 
 h2 {
