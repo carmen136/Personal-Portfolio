@@ -1,5 +1,6 @@
 import Image from "next/image";
 import styled from "styled-components";
+import { alumniSansPinstripe } from "/styles";
 
 
 export default function Introduction() {
@@ -66,14 +67,17 @@ const StyledComment = styled.p`
 `;
 
 const StyledSubtTitle = styled.h2`
-    font-size: 18px;
-
+    font-family: ${alumniSansPinstripe.style.fontFamily};
+    text-transform: none;
+    font-size: 38px;
+    font-weight: bold;
+    
     @media(min-width: 992px){
-        font-size: 24px;
+        font-size: 50px;
     }
 
     @media(min-width: 1710px){
-        font-size: 30px;
+        font-size: 60px;
     }
     `;
 

@@ -1,7 +1,8 @@
 import { createGlobalStyle } from "styled-components";
-import { Lexend } from "next/font/google";
+import { Lexend, Alumni_Sans_Pinstripe } from "next/font/google";
 
-const lexendPeta = Lexend({ subsets: ['latin'] });
+export const lexendPeta = Lexend({ subsets: ['latin'] });
+export const alumniSansPinstripe = Alumni_Sans_Pinstripe({ subsets: ['latin'], weight: ['400'] });
 
 export default createGlobalStyle`
 
@@ -32,7 +33,7 @@ h1 {
     }
 
     @media (min-width: 1710px) {
-        font-size: 100px;
+        font-size: 90px;
     }
 }
 

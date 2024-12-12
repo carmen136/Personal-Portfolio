@@ -11,9 +11,9 @@ export default function Projects() {
                 
                 <StyledTextBottomWrapper>
                     <StyledList>
-                        <StyledListItem>Project 1</StyledListItem>
-                        <StyledListItem>Project 2</StyledListItem>
-                        <StyledListItem>Project 3</StyledListItem>
+                        <StyledListItem>I am still working on this website. Some content and features may not be available yet. Thank you for your patience! </StyledListItem>
+                        <StyledListItem>This is a placeholder</StyledListItem>
+                        <StyledListItem>This is a placeholder</StyledListItem>
                     </StyledList>
                 </StyledTextBottomWrapper>
             </StyledContentContainer>
@@ -91,6 +91,7 @@ const StyledList = styled.ul`
 
 const StyledListItem = styled.li`
     text-transform: uppercase;
+    font-style: italic;
     background-color: rgba(195, 155, 211, 0.5);
     padding: 2px 6px;
     width: 250px;
