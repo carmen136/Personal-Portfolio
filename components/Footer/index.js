@@ -7,9 +7,9 @@ export default function Footer() {
         <StyledImpressumContainer>
             <li>This site is built with React and Next.js</li>
             <li> {'© 2024 Carmen Müller. All rights reserved.'}</li>
-            <Link href="/impressum">
+            <StyledLink href="/impressum">
                 <li>Impressum</li>
-            </Link>
+            </StyledLink>
         </StyledImpressumContainer>
     )
 };
@@ -17,6 +17,8 @@ export default function Footer() {
 
 
 const StyledImpressumContainer = styled.ul`
+    position: relative;
+    bottom: 0;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -33,4 +35,15 @@ const StyledImpressumContainer = styled.ul`
         font-size: 8px;
         padding: 0 10px 5px;
     }
+`;
+
+const StyledLink = styled(Link)`
+    text-decoration: none;
+    color: rgba(128, 128, 128, 0.7);
+    text-transform: uppercase;
+
+    &:hover {
+        color: rgb(165, 105, 189);
+    }
+    
 `;
