@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { IoLogoGithub } from "react-icons/io5";
 import { IoLogoLinkedin } from "react-icons/io5";
+import Link from "next/link";
 
 export default function Connect() {
     return (
@@ -30,7 +31,9 @@ export default function Connect() {
             <StyledImpressumContainer>
                         <li>This site is built with React and Next.js</li>
                         <li> {'© 2024 Carmen Müller. All rights reserved.'}</li>
-                        <li>Impressum</li>
+                        <Link href="/impressum">
+                            <li>Impressum</li>
+                        </Link>
             </StyledImpressumContainer>
         </>
     )

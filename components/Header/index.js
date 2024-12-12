@@ -5,10 +5,10 @@ export default function Header() {
  
     return(
         <StyledHeader>
-            <StyledLink href="#introduction">Home</StyledLink>
-            <StyledLink href="#about">About</StyledLink>
-            <StyledLink href="#projects">Projects</StyledLink>
-            <StyledLink href="#connect">Connect</StyledLink>
+            <StyledLink href="/#introduction">Home</StyledLink>
+            <StyledLink href="/#about">About</StyledLink>
+            <StyledLink href="/#projects">Projects</StyledLink>
+            <StyledLink href="/#connect">Connect</StyledLink>
         </StyledHeader>
     )
 
