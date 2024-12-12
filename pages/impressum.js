@@ -17,7 +17,7 @@ export default function ImpressumPage() {
             <StyledText>E-Mail: carmen.a.mueller@gmx.de</StyledText>
             <StyledText>Website: carmenmueller.de</StyledText>
             
-            <h3>Verantwortlich für den Inhalt nach § 55 bs. 2 RStV:</h3>
+            <h3>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:</h3>
             <StyledText>Carmen Müller</StyledText>
         </StyledMain>
     )
