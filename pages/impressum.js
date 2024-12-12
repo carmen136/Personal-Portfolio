@@ -8,8 +8,8 @@ export default function ImpressumPage() {
             <h2>Impressum</h2>
 
             <h3>Angaben gemäß § 5 TMG:</h3>
-            <StyledText>[Carmen Müller]</StyledText>
-            <StyledText>[Deine Adresse]</StyledText>
+            <StyledText>Carmen Müller</StyledText>
+            <StyledText>[Adresse]</StyledText>
             <StyledText>[PLZ, Ort]</StyledText>
             <StyledText>Deutschland</StyledText>
             
@@ -25,9 +25,8 @@ export default function ImpressumPage() {
 
 
 const StyledMain = styled.main`
-    position: relative;
-    top: 60px;
-    margin-bottom: 100px;
+    height: 95vh;
+    padding-top: 50px;
     margin-left: 10px;
     margin-right: 10px;
 

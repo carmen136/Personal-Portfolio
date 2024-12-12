@@ -15,7 +15,7 @@ export default function Introduction() {
                 </StyledTextWrapper>
                 
                 <StyledImageWrapper>
-                    <Image src="/profile_portfolio.jpg" alt="photo of Carmen" fill={true} style={{ objectFit: "cover", objectPosition: "top" }}/>
+                    <Image src="/profile_portfolio.jpg" alt="photo of Carmen" fill={true} style={{ objectFit: "cover", objectPosition: "top" }} loading="lazy"/>
                 </StyledImageWrapper>
             </StyledContentContainer>
             
