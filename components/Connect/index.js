@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import { IoLogoGithub } from "react-icons/io5";
 import { IoLogoLinkedin } from "react-icons/io5";
-import Link from "next/link";
 
 export default function Connect() {
     return (
@@ -28,13 +27,6 @@ export default function Connect() {
                     <StyledComment>{'// Network'}</StyledComment>
                 </StyledTextRightWrapper>
             </StyledContentContainer>
-            <StyledImpressumContainer>
-                        <li>This site is built with React and Next.js</li>
-                        <li> {'© 2024 Carmen Müller. All rights reserved.'}</li>
-                        <Link href="/impressum">
-                            <li>Impressum</li>
-                        </Link>
-            </StyledImpressumContainer>
         </>
     )
 };
@@ -128,24 +120,4 @@ const StyledExternalLink = styled.a`
     color: rgba(165, 105, 189, 1);
 }
 
-`;
-
-
-const StyledImpressumContainer = styled.ul`
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    list-style: none;
-    padding: 0 50px;
-    gap: 20px;
-    height: 4vh;
-    width: 100%;
-    color: rgba(128, 128, 128, 0.7);
-    font-size: 12px;
-    text-transform: uppercase;
-
-    @media(max-width: 768px){
-        font-size: 8px;
-        padding: 0 10px;
-    }
 `;

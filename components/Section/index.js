@@ -11,20 +11,23 @@ export default function Section({content, id}) {
 
 
 const projectsTheme = {
-    height: "65vh"
+    height: "65vh",
+    borderBottom: "2px solid rgba(195, 155, 211, 0.8)"
 };
 
 const connectTheme = {
-    height: "35vh"
+    height: "30vh",
+    borderBottom: "none"
 }
 
 const defaultTheme = {
-    height: "50vh"
+    height: "50vh",
+    borderBottom: "2px solid rgba(195, 155, 211, 0.8)"
 }
 
 const StyledSection = styled.section`
     width: 100%;
     height: ${props => props.theme.height};
     background-color: white;
-    border-bottom: 2px solid rgba(195, 155, 211, 0.8);
+    border-bottom: ${props => props.theme.borderBottom};
 `;

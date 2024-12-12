@@ -1,6 +1,7 @@
-import "@/styles/globals.css";
-import Header from "@/components/Header";
+import "/styles/globals.css";
 import GlobalStyle from "../styles";
+import Header from "/components/Header";
+import Footer from "/components/Footer";
 
 export default function App({ Component, pageProps }) {
   return (
@@ -8,6 +9,7 @@ export default function App({ Component, pageProps }) {
     <GlobalStyle />
     <Header />
     <Component {...pageProps} />
+    <Footer />
   </>
   )
 }
