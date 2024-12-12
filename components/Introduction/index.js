@@ -4,8 +4,8 @@ import Image from "next/image";
 import styled from "styled-components";
 import { alumniSansPinstripe } from "/styles";
 
-
 export default function Introduction() {
+
     return (
         <>
             <StyledContentContainer>
@@ -21,9 +21,7 @@ export default function Introduction() {
                     src="/profile_portfolio.jpg"
                     alt="photo of Carmen"
                     fill={true}
-                    // style={{ objectFit: "cover", objectPosition: "top" }}
-                    loading="lazy"
-                    // sizes="(max-width: 576px) 50vw, (max-width: 992px) 50vw, 50vw"
+                    // loading="eager"
                     />
                 </StyledImageWrapper>
             </StyledContentContainer>
