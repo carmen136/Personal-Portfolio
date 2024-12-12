@@ -38,13 +38,13 @@ const StyledTextWrapper = styled.div`
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-end;
-    background-color: white;
+    background-color: rgb(var(--bg-color-main));
     flex-grow: 1;
     width: 50vw;
     z-index: 2;
     position: relative;
     padding-right: 12px;
-    border-bottom: 2px solid rgba(195, 155, 211, 0.8);
+    border-bottom: 2px solid rgba(var(--bg-color-highlight), 0.8);
     text-align: right;
 
     @media(max-width: 576px){
@@ -58,7 +58,7 @@ const StyledTextWrapper = styled.div`
 const StyledComment = styled.p`
     font-size: 18px;
     text-transform: uppercase;
-    color: rgb(128, 128, 128);
+    color: rgb(var(--font-color-comment));
 
 
     @media(max-width: 576px){
@@ -88,7 +88,7 @@ const StyledImageWrapper = styled.div`
     overflow: hidden;
     position: relative;
     flex-grow: 1;
-    border-bottom: 2px solid rgba(195, 155, 211, 0.5);
+    border-bottom: 2px solid rgba(var(--bg-color-highlight), 0.5);
 `;
 
 const StyledImageLayer = styled.div`
@@ -98,10 +98,10 @@ const StyledImageLayer = styled.div`
     top: 0;
     left: 0;
     z-index: 1;
-    background-color: rgba(195, 155, 211, 0.5);
+    background-color: rgba(var(--bg-color-highlight), 0.5);
     transition: background-color 0.45s ease-in-out;
 
 &:hover {
-    background-color: rgba(195, 155, 211, 0.15);
+    background-color: rgba(var(--bg-color-highlight), 0.15);
 }
 `;

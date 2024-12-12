@@ -59,7 +59,7 @@ const StyledTextWrapper = styled.div`
 const StyledComment = styled.p`
     font-size: 18px;
     text-transform: uppercase;
-    color: rgb(128, 128, 128);
+    color: rgb(var(--font-color-comment));
 
     @media(max-width: 576px){
         font-size: 14px;
@@ -109,15 +109,15 @@ const StyledListItem = styled.li`
 const StyledExternalLink = styled.a`
 
 &:visited {
-    color: black;
+    color: rgb(var(--bg-color-main));
 }
 
 &:active {
-    color: rgba(165, 105, 189, 1);
+    color: rgb(var(--icon-color-highlight));
 }
 
 &:hover {
-    color: rgba(165, 105, 189, 1);
+    color: rgb(var(--icon-color-highlight));
 }
 
 `;

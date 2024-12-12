@@ -18,7 +18,7 @@ export default function Header() {
 const StyledHeader = styled.header`
     width: 100%;
     height: 40px;
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(var(--bg-color-variant), 0.1);
     position: fixed;
     top: 0;
     z-index: 5;
@@ -49,6 +49,6 @@ const StyledLink = styled(Link)`
     text-transform: uppercase;
 
     &:hover {
-        color: white;
+        color: rgb(var(--font-color-highlight));
     }
 `;

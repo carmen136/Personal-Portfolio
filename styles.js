@@ -6,6 +6,16 @@ export const alumniSansPinstripe = Alumni_Sans_Pinstripe({ subsets: ['latin'], w
 
 export default createGlobalStyle`
 
+:root {
+    --font-color-comment: 128, 128, 128;
+    --font-color-highlight: 256, 256, 256;
+    --icon-color-highlight: 165, 105, 189;
+    --bg-color-main: 256, 256, 256;
+    --bg-color-variant: 0, 0, 0;
+    --bg-color-highlight: 195, 155, 211;
+}
+
+
 *,
 *::before,
 *::after {

@@ -27,7 +27,7 @@ const StyledImpressumContainer = styled.ul`
     gap: 20px;
     height: 5vh;
     width: 100%;
-    color: rgba(128, 128, 128, 0.7);
+    color: rgba(var(--font-color-comment), 0.7);
     font-size: 12px;
     text-transform: uppercase;
 
@@ -39,11 +39,11 @@ const StyledImpressumContainer = styled.ul`
 
 const StyledLink = styled(Link)`
     text-decoration: none;
-    color: rgba(128, 128, 128, 0.7);
+    color: rgba(var(--font-color-comment), 0.7);
     text-transform: uppercase;
 
     &:hover {
-        color: rgb(165, 105, 189);
+        color: rgb(var(--icon-color-highlight));
     }
     
 `;

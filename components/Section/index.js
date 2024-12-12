@@ -12,7 +12,7 @@ export default function Section({content, id}) {
 
 const projectsTheme = {
     height: "65vh",
-    borderBottom: "2px solid rgba(195, 155, 211, 0.8)"
+    borderBottom: "2px solid rgba(var(--bg-color-highlight), 0.8)"
 };
 
 const connectTheme = {
@@ -22,12 +22,12 @@ const connectTheme = {
 
 const defaultTheme = {
     height: "50vh",
-    borderBottom: "2px solid rgba(195, 155, 211, 0.8)"
+    borderBottom: "2px solid rgba(var(--bg-color-highlight), 0.8)"
 }
 
 const StyledSection = styled.section`
     width: 100%;
     height: ${props => props.theme.height};
-    background-color: white;
+    background-color: rgb(var(--bg-color-main));
     border-bottom: ${props => props.theme.borderBottom};
 `;

@@ -45,7 +45,7 @@ const StyledTextWrapper = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
-    background-color: rgba(195, 155, 211, 0.5);
+    background-color: rgba(var(--bg-color-highlight), 0.5);
     z-index: 2;
     position: relative;
     padding-left: 20px;
@@ -70,7 +70,7 @@ const StyledTextWrapper = styled.div`
 const StyledComment = styled.p`
     font-size: 18px;
     text-transform: uppercase;
-    color: rgb(128, 128, 128);
+    color: rgb(var(--font-color-comment));
     padding-bottom: 8px;
 
     @media(max-width: 576px){
@@ -132,12 +132,12 @@ const StyledList = styled.ul`
 
 const StyledListItem = styled.li`
     text-transform: uppercase;
-    background-color: rgba(195, 155, 211, 0.5);
+    background-color: rgba(var(--bg-color-highlight), 0.5);
     padding: 2px 6px;
     transition: background-color 0.45s ease;
 
 &:hover {
-    background-color: rgba(195, 155, 211, 0.8);
+    background-color: rgba(var(--bg-color-highlight), 0.8);
 }
 
 @media(max-width: 576px){
