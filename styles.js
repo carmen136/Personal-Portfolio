@@ -1,3 +1,5 @@
+"use client";
+
 import { createGlobalStyle } from "styled-components";
 import { Lexend, Alumni_Sans_Pinstripe } from "next/font/google";
 

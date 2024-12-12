@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import styled from "styled-components";
 import { alumniSansPinstripe } from "/styles";
@@ -15,7 +17,14 @@ export default function Introduction() {
                 </StyledTextWrapper>
                 
                 <StyledImageWrapper>
-                    <Image src="/profile_portfolio.jpg" alt="photo of Carmen" fill={true} style={{ objectFit: "cover", objectPosition: "top" }} loading="lazy"/>
+                    <StyledImage 
+                    src="/profile_portfolio.jpg"
+                    alt="photo of Carmen"
+                    fill={true}
+                    // style={{ objectFit: "cover", objectPosition: "top" }}
+                    loading="lazy"
+                    // sizes="(max-width: 576px) 50vw, (max-width: 992px) 50vw, 50vw"
+                    />
                 </StyledImageWrapper>
             </StyledContentContainer>
             
@@ -28,7 +37,6 @@ const StyledContentContainer = styled.article`
     display: flex;
     overflow: hidden;
     position: relative;
-    z-index: 0;
     width: 100%;
 `;
 
@@ -39,9 +47,9 @@ const StyledTextWrapper = styled.div`
     justify-content: center;
     align-items: flex-end;
     background-color: rgb(var(--bg-color-main));
-    flex-grow: 1;
     width: 50vw;
     z-index: 2;
+    flex-grow: 1;
     position: relative;
     padding-right: 12px;
     border-bottom: 2px solid rgba(var(--bg-color-highlight), 0.8);
@@ -84,10 +92,10 @@ const StyledSubtTitle = styled.h2`
 const StyledImageWrapper = styled.div`
     width: 50vw;
     max-width: 586px;
+    flex-grow: 1;
     height: 50vh;
     overflow: hidden;
     position: relative;
-    flex-grow: 1;
     border-bottom: 2px solid rgba(var(--bg-color-highlight), 0.5);
 `;
 
@@ -104,4 +112,11 @@ const StyledImageLayer = styled.div`
 &:hover {
     background-color: rgba(var(--bg-color-highlight), 0.15);
 }
+`;
+
+const StyledImage = styled(Image)`
+    width: 50vw;
+    height: auto;
+    object-fit: cover;
+    object-position: top;
 `;

@@ -1,3 +1,5 @@
+"use client";
+
 import styled, {ThemeProvider} from "styled-components";
 
 export default function Section({content, id}) {

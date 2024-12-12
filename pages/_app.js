@@ -1,4 +1,5 @@
-import "/styles/globals.css";
+"use client";
+
 import GlobalStyle from "../styles";
 import Header from "/components/Header";
 import Footer from "/components/Footer";

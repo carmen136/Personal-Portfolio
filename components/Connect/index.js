@@ -1,3 +1,5 @@
+"use client";
+
 import styled from "styled-components";
 import { IoLogoGithub } from "react-icons/io5";
 import { IoLogoLinkedin } from "react-icons/io5";
@@ -109,7 +111,7 @@ const StyledListItem = styled.li`
 const StyledExternalLink = styled.a`
 
 &:visited {
-    color: rgb(var(--bg-color-main));
+    color: rgb(var(--bg-color-variant));
 }
 
 &:active {
