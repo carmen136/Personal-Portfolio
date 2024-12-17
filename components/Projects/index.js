@@ -13,9 +13,9 @@ export default function Projects() {
                 
                 <StyledTextBottomWrapper>
                     <StyledList>
-                        <StyledListItem>I am still working on this website. Some content and features may not be available yet. Thank you for your patience! </StyledListItem>
-                        <StyledListItem>This is a placeholder</StyledListItem>
-                        <StyledListItem>This is a placeholder</StyledListItem>
+                        <StyledListItem>I am still working on this website.</StyledListItem>
+                        <StyledListItem>Some content and features may not be available yet.</StyledListItem>
+                        <StyledListItem>Thank you for your patience!</StyledListItem>
                     </StyledList>
                 </StyledTextBottomWrapper>
             </StyledContentContainer>
@@ -85,10 +85,14 @@ const StyledTextBottomWrapper = styled.div`
 const StyledList = styled.ul`
     display: flex;
     list-style: none;
-    gap: 15px;
+    gap: 10px;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+
+    @media(min-width: 503px){
+        gap: 15px;
+    }
 `;
 
 const StyledListItem = styled.li`
@@ -96,16 +100,18 @@ const StyledListItem = styled.li`
     font-style: italic;
     background-color: rgba(var(--bg-color-highlight), 0.5);
     padding: 2px 6px;
-    width: 250px;
-    height: 250px;
+    width: 150px;
+    height: 125px;
 
-    @media(max-width: 576px){
-        width: 150px;
-        height: 125px;
-    }
-
-    @media(max-width: 768px){
+    @media(min-width: 503px){
         width: 200px;
         height: 160px;
     }
+
+    @media(min-width: 813px){
+        width: 250px;
+        height: 250px;
+    }
+
+
 `;
