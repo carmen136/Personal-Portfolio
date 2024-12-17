@@ -61,9 +61,9 @@ const StyledTextWrapper = styled.div`
 
     &.no-hover {
         transition: none;
-        
+
         &:hover {
-            width: 30%;
+            width: 20%;
         }
     }
 
