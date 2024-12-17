@@ -4,7 +4,7 @@ import Image from "next/image";
 import styled from "styled-components";
 import { alumniSansPinstripe } from "/styles";
 
-export default function Introduction() {
+export default function Introduction({ noHover }) {
 
     return (
         <>
