@@ -2,11 +2,11 @@
 
 import styled from "styled-components";
 
-export default function About() {
+export default function About({ noHover }) {
     return (
         <>
             <StyledContentContainer>
-                <StyledTextWrapper>
+                <StyledTextWrapper className={noHover ? "no-hover" : ""}>
                     <h2>About</h2>
                 </StyledTextWrapper>
                 
@@ -15,17 +15,17 @@ export default function About() {
                     <StyledInfoText>Web developer with a Bachelor degree in Environmental Engineering. Through absolving the Web Dev Bootcamp at neue fische and my experiences in a tech startup, I have acquired not only technical skills but also competencies in agile project management and teamwork. Passionate about developing digital solutions that are both user-friendly and sustainable.</StyledInfoText>
                     <StyledComment>{'// Tech Stack'}</StyledComment>
                     <StyledList>
-                        <StyledListItem>HTML</StyledListItem>
-                        <StyledListItem>CSS</StyledListItem>
-                        <StyledListItem>JavaScript</StyledListItem>
-                        <StyledListItem>React</StyledListItem>
-                        <StyledListItem>Next.js</StyledListItem>
-                        <StyledListItem>Node.js</StyledListItem>
-                        <StyledListItem>noSQL</StyledListItem>
-                        <StyledListItem>mongoDB</StyledListItem>
-                        <StyledListItem>git</StyledListItem>
-                        <StyledListItem>GitHub</StyledListItem>
-                        <StyledListItem>Miro</StyledListItem>
+                        <StyledListItem className={noHover ? "no-hover" : ""}>HTML</StyledListItem>
+                        <StyledListItem className={noHover ? "no-hover" : ""}>CSS</StyledListItem>
+                        <StyledListItem className={noHover ? "no-hover" : ""}>JavaScript</StyledListItem>
+                        <StyledListItem className={noHover ? "no-hover" : ""}>React</StyledListItem>
+                        <StyledListItem className={noHover ? "no-hover" : ""}>Next.js</StyledListItem>
+                        <StyledListItem className={noHover ? "no-hover" : ""}>Node.js</StyledListItem>
+                        <StyledListItem className={noHover ? "no-hover" : ""}>noSQL</StyledListItem>
+                        <StyledListItem className={noHover ? "no-hover" : ""}>mongoDB</StyledListItem>
+                        <StyledListItem className={noHover ? "no-hover" : ""}>git</StyledListItem>
+                        <StyledListItem className={noHover ? "no-hover" : ""}>GitHub</StyledListItem>
+                        <StyledListItem className={noHover ? "no-hover" : ""}>Miro</StyledListItem>
                     </StyledList>
                 </StyledTextRightWrapper>
             </StyledContentContainer>
@@ -57,6 +57,12 @@ const StyledTextWrapper = styled.div`
 
     &:hover {
         width: 35%;
+    }
+
+    &.no-hover {
+        &:hover {
+            width: 30%;
+        }
     }
 
     @media(max-width: 576px){
@@ -141,6 +147,12 @@ const StyledListItem = styled.li`
 &:hover {
     background-color: rgba(var(--bg-color-highlight), 0.8);
 }
+
+&.no-hover {
+        &:hover {
+            background-color: rgba(var(--bg-color-highlight), 0.5);
+        }
+    }
 
 @media(max-width: 576px){
         font-size: 10px;

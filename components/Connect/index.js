@@ -4,11 +4,11 @@ import styled from "styled-components";
 import { IoLogoGithub } from "react-icons/io5";
 import { IoLogoLinkedin } from "react-icons/io5";
 
-export default function Connect() {
+export default function Connect({ noHover }) {
     return (
         <>
             <StyledContentContainer>
-                <StyledTextWrapper>
+                <StyledTextWrapper className={noHover ? "no-hover" : ""}>
                 <StyledComment>{'// Let`s'}</StyledComment>
                     <h2>Connect</h2>
                 </StyledTextWrapper>
@@ -16,12 +16,12 @@ export default function Connect() {
                 <StyledTextRightWrapper>
                     <StyledList>
                         <StyledListItem>
-                            <StyledExternalLink href="https://github.com/carmen136">
+                            <StyledExternalLink href="https://github.com/carmen136" className={noHover ? "no-hover" : ""}>
                                 <IoLogoGithub style={{ color: 'rgb(var(--bg-color-variant)' }} />
                             </StyledExternalLink>
                             </StyledListItem>
                         <StyledListItem>
-                            <StyledExternalLink href="https://www.linkedin.com/in/carmen-a-m%C3%BCller/">
+                            <StyledExternalLink href="https://www.linkedin.com/in/carmen-a-m%C3%BCller/" className={noHover ? "no-hover" : ""}>
                                 <IoLogoLinkedin style={{ color: 'rgb(var(--bg-color-variant)' }} />
                             </StyledExternalLink>
                         </StyledListItem>
@@ -55,6 +55,12 @@ const StyledTextWrapper = styled.div`
 
     &:hover {
         padding-top: 25px;
+    }
+
+    &.no-hover {
+        &:hover {
+            padding-top: 0px;
+        }
     }
 `;
 
@@ -121,5 +127,11 @@ const StyledExternalLink = styled.a`
 &:hover {
     color: rgb(var(--icon-color-highlight));
 }
+
+&.no-hover {
+        &:hover {
+            color: rgb(var(--bg-color-variant));
+        }
+    }
 
 `;

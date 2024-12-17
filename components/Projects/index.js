@@ -2,11 +2,11 @@
 
 import styled from "styled-components";
 
-export default function Projects() {
+export default function Projects({ noHover }) {
     return (
         <>
             <StyledContentContainer>
-                <StyledTextWrapper>
+                <StyledTextWrapper className={noHover ? "no-hover" : ""}>
                     <h2>Projects</h2>
                     <StyledComment>{'// Explore'}</StyledComment>
                 </StyledTextWrapper>
@@ -48,6 +48,12 @@ const StyledTextWrapper = styled.div`
 
     &:hover {
         width: 98%;
+    }
+
+    &.no-hover {
+        &:hover {
+            width: 100%;
+        }
     }
 
     @media(max-width: 576px){

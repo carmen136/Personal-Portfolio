@@ -10,9 +10,9 @@ export default function Home({ noHover }) {
   return (
     <main>
       <Section content={<Introduction noHover={noHover} />} id="introduction" />
-      <Section content={<About />} id="about" />
-      <Section content={<Projects />} id="projects" />
-      <Section content={<Connect />} id="connect" />
+      <Section content={<About noHover={noHover} />} id="about" />
+      <Section content={<Projects noHover={noHover} />} id="projects" />
+      <Section content={<Connect noHover={noHover} />} id="connect" />
     </main>
   );
 }

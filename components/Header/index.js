@@ -3,14 +3,14 @@
 import Link from "next/link";
 import styled from "styled-components";
 
-export default function Header() {
+export default function Header({ noHover }) {
  
     return(
         <StyledHeader>
-            <StyledLink href="/#introduction">Home</StyledLink>
-            <StyledLink href="/#about">About</StyledLink>
-            <StyledLink href="/#projects">Projects</StyledLink>
-            <StyledLink href="/#connect">Connect</StyledLink>
+            <StyledLink href="/#introduction" className={noHover ? "no-hover" : ""}>Home</StyledLink>
+            <StyledLink href="/#about" className={noHover ? "no-hover" : ""}>About</StyledLink>
+            <StyledLink href="/#projects" className={noHover ? "no-hover" : ""}>Projects</StyledLink>
+            <StyledLink href="/#connect" className={noHover ? "no-hover" : ""}>Connect</StyledLink>
         </StyledHeader>
     )
 
@@ -47,10 +47,16 @@ const StyledHeader = styled.header`
 
 const StyledLink = styled(Link)`
     text-decoration: none;
-    color: black;
+    color: rgb(var(--bg-color-variant));
     text-transform: uppercase;
 
     &:hover {
         color: rgb(var(--font-color-highlight));
+    }
+
+    &.no-hover {
+        &:hover {
+            color: rgb(var(--bg-color-variant));
+        }
     }
 `;

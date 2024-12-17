@@ -23,7 +23,7 @@ export default function App({ Component, pageProps }) {
   return (
   <>
     <GlobalStyle />
-    <Header />
+    <Header noHover={noHover}/>
     <Component {...pageProps} noHover={noHover} />
     <Footer />
   </>
