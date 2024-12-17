@@ -27,7 +27,7 @@ export default class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-         <meta name="theme-color" content="rgba(var(--bg-color-variant), 0.1)" />
+         <meta name="theme-color" content="rgba(0, 0, 0, 0.1)" />
         </Head>
         <body>
           <Main />
