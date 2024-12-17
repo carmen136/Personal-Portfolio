@@ -26,7 +26,9 @@ export default class MyDocument extends Document {
   render() {
     return (
       <Html lang="en">
-        <Head />
+        <Head>
+         <meta name="theme-color" content="rgba(var(--bg-color-variant), 0.1)" />
+        </Head>
         <body>
           <Main />
           <NextScript />
