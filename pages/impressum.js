@@ -2,6 +2,8 @@
 
 import styled from "styled-components";
 
+// This page is currenty not in use; there is no need to insert a copyright page on personal websites.
+
 export default function ImpressumPage() {
 
 
