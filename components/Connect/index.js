@@ -17,12 +17,12 @@ export default function Connect() {
                     <StyledList>
                         <StyledListItem>
                             <StyledExternalLink href="https://github.com/carmen136">
-                                <IoLogoGithub />
+                                <IoLogoGithub style={{ color: 'rgb(var(--bg-color-variant)' }} />
                             </StyledExternalLink>
                             </StyledListItem>
                         <StyledListItem>
                             <StyledExternalLink href="https://www.linkedin.com/in/carmen-a-m%C3%BCller/">
-                                <IoLogoLinkedin />
+                                <IoLogoLinkedin style={{ color: 'rgb(var(--bg-color-variant)' }} />
                             </StyledExternalLink>
                         </StyledListItem>
                     </StyledList>
