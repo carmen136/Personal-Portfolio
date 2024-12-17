@@ -49,8 +49,8 @@ const StyledTextWrapper = styled.div`
     align-items: flex-end;
     flex-grow: 1;
     position: relative;
-    padding: 0px 12px 0px 20px;
-    width: 50%;
+    padding: 0px 10px 0px 20px;
+    min-width: 50%;
     transition: padding-top 0.45s ease-in-out;
 
     &:hover {
@@ -73,12 +73,12 @@ const StyledTextRightWrapper = styled.div`
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
-    width: 50%;
+    max-width: 50%;
     height: 30vh;
     position: relative;
     flex-grow: 1;
     text-align: left;
-    padding-left: 12px;
+    padding-left: 10px;
     padding-right: 20px;
 `;
 
