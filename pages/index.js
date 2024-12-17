@@ -6,10 +6,10 @@ import About from "/components/About";
 import Projects from "/components/Projects";
 import Connect from "/components/Connect";
 
-export default function Home() {
+export default function Home({ noHover }) {
   return (
     <main>
-      <Section content={<Introduction />} id="introduction" />
+      <Section content={<Introduction noHover={noHover} />} id="introduction" />
       <Section content={<About />} id="about" />
       <Section content={<Projects />} id="projects" />
       <Section content={<Connect />} id="connect" />

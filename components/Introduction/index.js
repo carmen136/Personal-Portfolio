@@ -9,7 +9,7 @@ export default function Introduction() {
     return (
         <>
             <StyledContentContainer>
-                <StyledImageLayer />
+                <StyledImageLayer className={noHover ? "no-hover" : ""} />
                 <StyledTextWrapper>
                     <StyledComment>{'// I am'}</StyledComment>
                     <h1>Web Developer</h1>
@@ -21,7 +21,6 @@ export default function Introduction() {
                     src="/profile_portfolio.jpg"
                     alt="photo of Carmen"
                     fill={true}
-                    // loading="eager"
                     />
                 </StyledImageWrapper>
             </StyledContentContainer>
@@ -109,6 +108,12 @@ const StyledImageLayer = styled.div`
 
 &:hover {
     background-color: rgba(var(--bg-color-highlight), 0.15);
+}
+
+&.no-hover {
+    &:hover {
+        background-color: rgba(var(--bg-color-highlight), 0.5);
+        }
 }
 `;
 
