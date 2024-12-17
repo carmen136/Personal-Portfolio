@@ -75,7 +75,7 @@ const StyledComment = styled.p`
 const StyledSubtTitle = styled.h2`
     font-family: ${alumniSansPinstripe.style.fontFamily};
     text-transform: none;
-    font-size: 38px;
+    font-size: 30px;
     font-weight: bold;
     
     @media(min-width: 992px){
